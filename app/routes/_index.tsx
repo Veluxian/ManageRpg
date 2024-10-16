@@ -1,4 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 import stylesUrl from "~/styles/index.css";
 
 export const links: LinksFunction = () =>[
@@ -7,6 +8,17 @@ export const links: LinksFunction = () =>[
 
 export default function IndexRoute() {
   return (
-    <div>Al parecer esta es la pagina principal</div>
+    <div className="containter">
+      <div className="content">
+        <h1>Manage<span>RPG</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="ManageRpg"> Pagina principal</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
