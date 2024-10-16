@@ -1,3 +1,10 @@
+import type { LinksFunction } from "@remix-run/node";
+import stylesUrl from "~/styles/index.css";
+
+export const links: LinksFunction = () =>[
+  {rel: "stylesheet", href: stylesUrl },
+];
+
 export default function IndexRoute() {
   return (
     <div>Al parecer esta es la pagina principal</div>
