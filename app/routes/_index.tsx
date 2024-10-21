@@ -8,7 +8,7 @@ export const links: LinksFunction = () =>[
 
 export default function IndexRoute() {
   return (
-    <div className="containter">
+    <div className="container">
       <div className="content">
         <h1>Manage<span>RPG</span></h1>
       </div>
