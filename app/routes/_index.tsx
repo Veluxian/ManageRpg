@@ -1,9 +1,10 @@
+import { Link } from "@remix-run/react";
+
 export default function IndexRoute() {
   return (
-    <div className="container">
-      <div className="content">
-        <h1>Manage<span>RPG</span></h1>
-      </div>
+    <div>
+      <p>Vamos a otra pagina</p>
+      <Link to="creacionPersonajes">Vamos</Link>
     </div>
   );
 }

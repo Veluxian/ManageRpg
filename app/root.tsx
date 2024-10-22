@@ -1,3 +1,11 @@
+import {
+  Links,
+  Link,
+  Meta,
+  Outlet,
+  Scripts,
+} from "@remix-run/react";
+
 export default function App() {
   return (
     <html lang="en">
@@ -7,9 +15,20 @@ export default function App() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <title>Remix: So great, it's funny!</title>
+        <title>ManageRPG</title>
+        <Links />
       </head>
+      <header>
+        <div>
+          <Link to="."> 
+          <h1> Manage RPG </h1>
+          </Link>
+        </div>
+      </header>
       <body>
+        <Outlet />
+        
+        <Scripts />
       </body>
     </html>
   );
