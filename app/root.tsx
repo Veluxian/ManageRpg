@@ -10,7 +10,6 @@ export default function App() {
         <title>Remix: So great, it's funny!</title>
       </head>
       <body>
-
       </body>
     </html>
   );
